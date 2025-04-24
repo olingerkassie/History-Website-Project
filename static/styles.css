@@ -1,0 +1,126 @@
+.site-title {
+  text-align: center;
+  margin-bottom: 0.5em;
+}
+body {
+  font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    color: #333;
+    padding: 2rem;
+    max-width: 900px;
+    margin: auto;  font-size: 1.1rem; /* ← slightly larger */
+    line-height: 1.6;
+  }
+  
+  header {
+    background-color: #6a0dad;
+    color: white;
+    padding: 0.7em;
+    text-align: center;
+  }
+  
+  nav a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+  }
+  
+  main {
+    padding: 2em;
+    text-align: center;
+  }
+  
+  h1, h2 {
+    color: #6a0dad;
+  }
+  
+  .hero {
+    background-color: #f2ebfa;
+    padding: 3rem 2rem;
+    text-align: center;
+    border-radius: 0 0 2rem 2rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    
+  }
+
+  .card:hover {
+    transform: translateY(-5px) scale(1.03);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+  }
+  .hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #5e3b8c;
+  }
+  
+  .hero p {
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin: auto;
+  }
+ 
+  .sections {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    padding: 2rem;
+    margin-bottom: 3rem;
+  }
+  .image-row {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+  }
+ 
+  .card {
+    background-color: #f7f4fb;
+    border-radius: 1rem;
+    padding: 1.5rem;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-bottom: 2rem;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px) scale(1.03);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+  }
+
+  .card h3 {
+    color: #5e3b8c;
+  }
+  
+  .card img {
+    width: 100%;              /* Fill the card horizontally */
+    height: 200px;            /* Fixed height for consistency */
+    object-fit: cover;        /* Ensures the image fills without distortion */
+    border-radius: 0.5rem;
+    display: block;
+    margin: 0 auto;
+  }
+  .resources-redirect {
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+  }
+  
+  .resources-button {
+    background-color: #6a0dad;
+    color: white;
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 2rem;
+    text-decoration: none;
+    display: inline-block;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 4px 12px rgba(106, 13, 173, 0.3);
+  }
+  
+  .resources-button:hover {
+    background-color: #5a039c;
+    transform: translateY(-2px) scale(1.03);
+  }
