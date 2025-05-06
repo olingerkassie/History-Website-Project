@@ -82,6 +82,8 @@ body {
     cursor: pointer;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     margin-bottom: 2rem;
+    gap: 2rem;
+    margin-top: 2rem;
   }
   
   .card:hover {
@@ -96,11 +98,12 @@ body {
   .card img {
     width: 100%;              /* Fill the card horizontally */
     height: 200px;            /* Fixed height for consistency */
-    object-fit: cover;        /* Ensures the image fills without distortion */
+    object-fit: contain;        /* Ensures the image fills without distortion */
     border-radius: 0.5rem;
     display: block;
     margin: 0 auto;
   }
+  
   .resources-redirect {
     text-align: center;
     margin-top: 2rem;
