@@ -142,3 +142,27 @@ body {
     text-align: center;
     padding: 10px 0;
   }
+
+  .team-members {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap; /* Ensures responsiveness */
+    gap: 20px; /* Adds spacing between cards */
+  }
+
+  .about {
+    background-color: #f7f4fb;
+    border-radius: 1rem;
+    padding: 1.5rem;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-bottom: 2rem;
+    gap: 2rem;
+    margin-top: 2rem;
+  }
+  .about:hover {
+    transform: translateY(-5px) scale(1.03);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+  }
