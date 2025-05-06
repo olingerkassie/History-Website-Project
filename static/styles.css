@@ -123,7 +123,22 @@ body {
     box-shadow: 0 4px 12px rgba(106, 13, 173, 0.3);
   }
   
+  .box {
+    width: 300px;           /* Set a fixed or max width */
+    height: 200px;          /* Optional: set a fixed height */
+    padding: 16px;          /* Adds space inside the box */
+    border: 1px solid #ccc; /* Visual boundary */
+    box-sizing: border-box; /* Includes padding in total size */
+    word-wrap: break-word;  /* Ensures long words don't overflow */
+  }
+  
   .resources-button:hover {
     background-color: #5a039c;
     transform: translateY(-2px) scale(1.03);
+  }
+
+  footer {
+    color: 0 4px 12px rgba(106, 13, 173, 0.3);
+    text-align: center;
+    padding: 10px 0;
   }
