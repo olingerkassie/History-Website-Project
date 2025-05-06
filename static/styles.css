@@ -166,3 +166,11 @@ body {
     transform: translateY(-5px) scale(1.03);
     box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
   }
+  a {
+    text-decoration: none; /* Removes the underline */
+    color: inherit; /* Ensures the link inherits the text color */
+  }
+  
+  a:hover {
+    text-decoration: underline; /* Optional: Adds underline on hover for better accessibility */
+  }
