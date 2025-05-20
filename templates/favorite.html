@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Favorite Historical Figures | Tech History</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    </head>
+    <body>
+        <h1>Who's Your Favorite Historical Figure?</h1>
+        <p>We want to hear from you! Share your favorite historical figure in tech and why they inspire you.</p>
+
+        <form method="POST">
+            <label for="figure">name:</label>
+            <input type="text" id="figure" name="figure" required>
+            <button type="submit">Submit</button>
+        </form>
+
+        {% if name %}
+            <p>Nice choice! <strong>{{name}}</strong> really made history.</p>
+        {% endif %}
+
+        <p>Check out our <a href="resources.html">Resources</a> page for more information on historical figures in tech.</p>
+    </body>
+    </html>
